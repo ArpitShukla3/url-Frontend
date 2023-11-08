@@ -1,0 +1,36 @@
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    zoom: inherit;
+    color: aliceblue;
+    margin: auto 20px;
+}
+.element{
+    font-size: large;
+    height:20px;
+}
+.serial{
+    width: 10vb;
+}
+.longUrl{
+    overflow: hidden;
+    width: 70vb;
+}
+.shorturl{
+    width: 30vb;
+}
+.longUrl:hover{
+    overflow-y: hidden;
+}
+.heading{
+    background-color: grey;
+}
+.list:hover{
+}
+
+.anchor{
+    color: aliceblue;
+}

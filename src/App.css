@@ -1,0 +1,7 @@
+.bc{
+  height: 100%;
+  background-image: url('../src/assets/Cubes.png');
+  background-color: rgb(11  , 16, 27);
+  background-repeat: no-repeat;
+  background-size: cover; 
+} 
