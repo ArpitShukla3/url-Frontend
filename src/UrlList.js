@@ -8,4 +8,4 @@ export const signup=`${host}/short/signup/`;
 export const logout=`${host}/short/logout/`;
 
 
-export const home=`http://localhost:5173`;
+export const home=`https://url-frontend-snowy.vercel.app/`;

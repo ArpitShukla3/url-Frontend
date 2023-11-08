@@ -1,2 +1,2 @@
- const signup=`http://localhost:5173/signup`
+ const signup=`https://url-frontend-snowy.vercel.app/signup`
  export default signup;    
