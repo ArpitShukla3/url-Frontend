@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css"
 import { logout } from "../../UrlList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import{  setLogin,setLogout,refresh, downloadList} from "../../Slice/CreateSlice"
 // import Login/Signup from ""
@@ -21,6 +21,7 @@ function Navbar()
 
         if(res.status==200)
         {
+            localStorage.setItem('isLogin','false');
            dispatch(setLogout());
            dispatch(refresh());
         }
@@ -33,7 +34,7 @@ function Navbar()
               </Link>
                 <div className="left-nav">
                    
-                    {(document.cookie)?  <button className="login text-decoration-none" onClick={executeLogout}>LogOut</button>: 
+                    {(localStorage.getItem('isLogin')=='true')?  <button className="login text-decoration-none" onClick={executeLogout}>LogOut</button>: 
                      <button className="login"> 
                     <Link to={`/login`} className="text-decoration-none">Login</Link>/ 
                     <Link to={`/signup`} className="text-decoration-none">Signup</Link>

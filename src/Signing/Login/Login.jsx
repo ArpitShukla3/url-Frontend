@@ -17,8 +17,10 @@ function Login()
     const [flag,setflag]= useState(false);
     async function signin()
     {
+       
         setflag(false);
         const url=login_url;
+        
        const res= await fetch(url,{
         method:'POST',
         credentials: "include",
@@ -30,8 +32,10 @@ function Login()
         password:password
        })
        }); 
+       console.log("am i working",res.status);
        if(res.status==200)
        {
+        localStorage.setItem('isLogin','true');
         dispatch(setLogin());
         navigate("/",{replace:true});
        }

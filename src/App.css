@@ -1,5 +1,5 @@
 .bc{
-  height: 100%;
+  margin: 0;
   background-image: url('../src/assets/Cubes.png');
   background-color: rgb(11  , 16, 27);
   background-repeat: no-repeat;
