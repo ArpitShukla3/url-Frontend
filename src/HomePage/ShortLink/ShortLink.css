@@ -60,7 +60,7 @@
     color:aliceblue;
     width: 150px;
 }
-@media  (width<850px) {
+@media  (width<1200px) {
     .input-bar{
         width: 75vw;
         zoom: 1;

@@ -35,6 +35,6 @@
 .anchor{
     color: aliceblue;
 }
-.section{
-    height: 50vh;
+@media  (width<400px) {
+    
 }
