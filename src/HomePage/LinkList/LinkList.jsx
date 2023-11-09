@@ -25,7 +25,7 @@ function LinkList()
    let i=0;
     return (
         <>
-       {(document.cookie)?
+       {(localStorage.getItem('isLogin')=='true')?
         <div className="list heading" >
        <h1 className="element serial">S. No</h1>
         <h1 className="element longUrl">Url</h1>

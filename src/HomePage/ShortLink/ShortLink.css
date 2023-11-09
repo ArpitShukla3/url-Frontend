@@ -46,6 +46,7 @@
 }
 .heading
 {
+    text-align: center;
     margin-bottom: 20px;
     font-size: xx-large;
     text-decoration:none;
@@ -54,6 +55,8 @@
   -webkit-text-fill-color: transparent; 
 }
 .short-url{
+    text-align: center;
+    overflow: scroll;
     color:aliceblue;
     width: 150px;
 }

@@ -7,6 +7,7 @@
     zoom: inherit;
     color: aliceblue;
     margin: auto 20px;
+    overflow: scroll;
 }
 .element{
     font-size: large;
