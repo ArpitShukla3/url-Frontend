@@ -21,9 +21,10 @@ function Navbar()
 
         if(res.status==200)
         {
+            dispatch(setLogout());
+            dispatch(refresh());
             localStorage.setItem('isLogin','false');
-           dispatch(setLogout());
-           dispatch(refresh());
+          
         }
     }
     return (

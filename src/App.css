@@ -1,7 +1,9 @@
 .bc{
+  margin-top: 0 !important;
+  padding: 0 !important;
   margin: 0;
   background-image: url('../src/assets/Cubes.png');
-  background-color: rgb(11  , 16, 27);
-  background-repeat: no-repeat;
-  background-size: cover; 
+ background-color: rgb(11  , 16, 27);
+ background-repeat: no-repeat;
+ background-size:cover; 
 } 

@@ -33,7 +33,7 @@ function LinkList()
        </div>:<></>
        }
        { 
-       list.map((record)=>
+       (localStorage.getItem('isLogin')=='true')&&list.map((record)=>
          <div className="list" key={i}>
           <a className="element serial anchor">{i++}</a>
           <a className="element longUrl anchor" >{record.url}</a>

@@ -65,4 +65,7 @@
         width: 75vw;
         zoom: 1;
     }
+    .section{
+        height: 50vh;
+    }
 }
