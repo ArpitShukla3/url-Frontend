@@ -3,7 +3,6 @@ import "./Signup.css"
 import { home, signup } from "../../UrlList";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { signup } from "../../UrlList";
 function Signup()
 {
     const navigate = useNavigate();
