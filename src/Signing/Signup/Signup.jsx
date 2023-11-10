@@ -3,6 +3,7 @@ import "./Signup.css"
 import { home, signup } from "../../UrlList";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { signup } from "../../UrlList";
 function Signup()
 {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ function Signup()
     {
         // const url=signup;
         setFlag(false)
-        const url="http://localhost:5001/short/signup/";
+        const url=signup;
        const res= await fetch(url,{
         method:'POST',
         credentials:"include",
