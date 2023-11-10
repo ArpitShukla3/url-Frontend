@@ -47,7 +47,7 @@ function ShortLink(){
        <input  className="input"type="text" name="" id="input" placeholder="  enter links"  onChange={(e)=>{setInput(e.target.value);setShortUrl("")}}/>
         <button className="go-button" onClick={setAndClear}>Submit</button>
       </div>
-      <h3 className="short-url">{shortUrl}</h3>
+     { (localStorage.getItem('isLogin')=='true')&&<h3 className="short-url">{shortUrl}</h3>}
        </div>
         </>
     )

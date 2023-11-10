@@ -1,24 +1,24 @@
 .list{
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-around;
     align-items: center;
     text-align: center;
     zoom: inherit;
     color: aliceblue;
     margin: auto 20px;
-    overflow: scroll;
+    overflow-wrap:break-word ;
 }
 .element{
     font-size: large;
-    height:20px;
+    height:auto;
 }
 .serial{
-    width: 10vb;
+    width: auto;
 }
 .longUrl{
-    overflow: hidden;
-    width: 70vb;
+    
+    width: 50vw;
 }
 .shorturl{
     width: 30vb;
@@ -35,6 +35,16 @@
 .anchor{
     color: aliceblue;
 }
-@media  (width<400px) {
-    
+@media  (width<1200px) {
+    .LinkList{
+        margin: 10vh auto;
+    }
+    .list{
+        overflow-wrap:initial;
+        overflow-x: scroll;
+    }
+    .element{
+        overflow: scroll;
+        border-radius: 0;
+    }
 }

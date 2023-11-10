@@ -14,7 +14,7 @@
     zoom: 1.8   ;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 20px;
     text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
     background-color: rgb(24,30,41);
@@ -56,9 +56,8 @@
 }
 .short-url{
     text-align: center;
-    overflow: scroll;
+    overflow-wrap:break-word;
     color:aliceblue;
-    width: 150px;
 }
 @media  (width<1200px) {
     .input-bar{
@@ -66,6 +65,11 @@
         zoom: 1;
     }
     .section{
-        height: 50vh;
+        height: auto;
+        margin: 5vh;
+    }
+    .short-url{
+        overflow-wrap:break-word;   
+        margin: 4px 4px auto 4px;
     }
 }

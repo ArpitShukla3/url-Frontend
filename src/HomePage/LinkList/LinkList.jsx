@@ -24,7 +24,7 @@ function LinkList()
    useEffect(()=>{downloadList()},[reload])
    let i=0;
     return (
-        <>
+        <div className="LinkList">
        {(localStorage.getItem('isLogin')=='true')?
         <div className="list heading" >
        <h1 className="element serial">S. No</h1>
@@ -41,7 +41,7 @@ function LinkList()
          </div>
        )}
        
-        </>
+        </div>
     )
 }
 export default LinkList;
